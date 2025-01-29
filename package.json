@@ -36,6 +36,7 @@
   "scripts": {
     "dev": "node examples/server.js",
     "build": "node scripts/build.js",
+    "prepare": "node scripts/build.js",
     "lint": "eslint src test",
     "test": "npm run lint && npm run build && npm run test:types && npm run test:unit && npm run test:ssr && npm run test:e2e && npm run test:esm",
     "test:unit": "jest --testPathIgnorePatterns test/e2e",
